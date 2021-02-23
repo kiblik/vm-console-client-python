@@ -78,6 +78,9 @@ class RESTClientObject(object):
         if configuration.retries is not None:
             addition_pool_args['retries'] = urllib3.Retry(configuration.retries)
 
+        if configuration.block is not None:
+            addition_pool_args['block'] = configuration.block
+
         if maxsize is None:
             if configuration.connection_pool_maxsize is not None:
                 maxsize = configuration.connection_pool_maxsize
