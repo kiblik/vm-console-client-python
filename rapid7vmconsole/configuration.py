@@ -94,6 +94,11 @@ class Configuration(object):
         # Safe chars for path_param
         self.safe_chars_for_path_param = ''
 
+        # Number of retries
+        self.retries = None
+        # Blocking call
+        self.block = None
+
     @classmethod
     def set_default(cls, default):
         cls._default = default
