@@ -1,3 +1,8 @@
+# ARCHIVED 
+
+This repository is not supported or maintained.
+Clients for other languages can be generated from the Swagger specification. Note that generated clients are not officially supported or maintained by Rapid7.
+
 # rapid7_vm_console
 
 rapid7_vm_console - the __UNOFFICIAL__ (but useful) Python library for the Rapid7 InsightVM/Nexpose RESTful API
