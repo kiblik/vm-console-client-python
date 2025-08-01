@@ -29,13 +29,13 @@ class Privileges(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'links': 'list[Link]',
-        'resources': 'list[str]'
+        "links": "list[Link]",
+        "resources": "list[str]"
     }
 
     attribute_map = {
-        'links': 'links',
-        'resources': 'resources'
+        "links": "links",
+        "resources": "resources"
     }
 
     def __init__(self, links=None, resources=None):  # noqa: E501
@@ -89,7 +89,7 @@ class Privileges(object):
         :param resources: The resources of this Privileges.  # noqa: E501
         :type: list[str]
         """
-        allowed_values = ["all-permissions", "approve-vulnerability-exceptions", "assign-scan-engine", "assign-scan-template", "assign-ticket-assignee", "close-tickets", "configure-global-settings", "create-reports", "create-tickets", "delete-vulnerability-exceptions", "manage-advpolicies", "manage-asset-group-access", "manage-asset-group-assets", "manage-dynamic-asset-groups", "manage-policies", "manage-report-access", "manage-report-templates", "manage-scan-alerts", "manage-scan-engines", "manage-scan-templates", "manage-site-access", "manage-site-credentials", "manage-sites", "manage-static-asset-groups", "manage-tags", "manage-vuln-investigations", "purge-site-asset-data", "schedule-automatic-scans", "specify-scan-targets", "specify-site-metadata", "start-unscheduled-scans", "submit-vulnerability-exceptions", "use-restricted-report-sections", "view-asset-group-asset-data", "view-site-asset-data", "view-vuln-investigations" ]  # noqa: E501
+        allowed_values = ["all-permissions", "approve-vulnerability-exceptions", "assign-scan-engine", "assign-scan-template", "assign-ticket-assignee", "close-tickets", "configure-global-settings", "create-reports", "create-tickets", "delete-vulnerability-exceptions", "manage-advpolicies", "manage-asset-group-access", "manage-asset-group-assets", "manage-asset-tags", "manage-dynamic-asset-groups", "manage-group-tags", "manage-policies", "manage-report-access", "manage-report-templates", "manage-scan-alerts", "manage-scan-engines", "manage-scan-templates", "manage-site-access", "manage-site-credentials", "manage-site-tags", "manage-sites", "manage-static-asset-groups", "manage-tags", "manage-vuln-investigations", "purge-site-asset-data", "schedule-automatic-scans", "specify-scan-targets", "specify-site-metadata", "start-unscheduled-scans", "submit-vulnerability-exceptions", "use-restricted-report-sections", "view-asset-group-asset-data", "view-site-asset-data", "view-vuln-investigations"]  # noqa: E501
         if not set(resources).issubset(set(allowed_values)):
             raise ValueError(
                 "Invalid values for `resources` [{0}], must be a subset of [{1}]"  # noqa: E501
